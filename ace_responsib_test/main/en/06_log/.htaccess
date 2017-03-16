@@ -1,0 +1,10 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+# authenticate(Basic)
+AuthUserFile /htdocs/main/en/06_log/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user

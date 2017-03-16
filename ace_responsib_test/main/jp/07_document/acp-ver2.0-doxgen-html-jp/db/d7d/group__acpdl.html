@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>ACP Library: ACP Middle Layer Data Library</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ace_icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ACP Library
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>総合概要</span></a></li>
+      <li><a href="../../modules.html"><span>モジュール</span></a></li>
+      <li><a href="../../annotated.html"><span>データ構造</span></a></li>
+      <li><a href="../../files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d7d/group__acpdl.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">モジュール</a> &#124;
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">ACP Middle Layer Data Library<div class="ingroups"><a class="el" href="../../dc/d6c/group__acpml.html">ACP Middle Layer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+ACP Middle Layer Data Library 連携図</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="../../db/d7d/group__acpdl.png" border="0" alt="" usemap="#db_2d7d_2group____acpdl"/>
+<map name="db_2d7d_2group____acpdl" id="db_2d7d_2group____acpdl">
+<area shape="rect" id="node1" href="../../dd/d12/group__list.html" title="ACP Middle Layer Dara\l Library List" alt="" coords="389,5,549,47"/>
+<area shape="rect" id="node3" href="../../dd/dd4/group__map.html" title="ACP Middle Layer Dara\l Library Map" alt="" coords="389,71,549,112"/>
+<area shape="rect" id="node5" href="../../dc/dcf/group__vector.html" title="ACP Middle Layer Dara\l Library Vector" alt="" coords="389,136,549,177"/>
+<area shape="rect" id="node6" href="../../d0/d0a/group__deque.html" title="ACP Middle Layer Dara\l Library Deque" alt="" coords="389,201,549,243"/>
+<area shape="rect" id="node7" href="../../d9/d13/group__set.html" title="ACP Middle Layer Dara\l Library Set" alt="" coords="389,267,549,308"/>
+<area shape="rect" id="node4" href="../../dc/d6c/group__acpml.html" title="ACP Middle Layer" alt="" coords="5,143,133,170"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+モジュール</h2></td></tr>
+<tr class="memitem:dc/dcf/group__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcf/group__vector.html">ACP Middle Layer Dara Library Vector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d0a/group__deque"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html">ACP Middle Layer Dara Library Deque</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/d12/group__list"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d12/group__list.html">ACP Middle Layer Dara Library List</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d13/group__set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d13/group__set.html">ACP Middle Layer Dara Library Set</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/dd4/group__map"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd4/group__map.html">ACP Middle Layer Dara Library Map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsditem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd8/structacp__element__t.html">acp_element_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5a/structacp__pair__t.html">acp_pair_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ga91a6d5e3d4854b93b4af717d1223dd12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga91a6d5e3d4854b93b4af717d1223dd12"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#ga91a6d5e3d4854b93b4af717d1223dd12">ACP_WSD_NULL</a>&#160;&#160;&#160;(<a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a>)(-1)</td></tr>
+<tr class="memdesc:ga91a6d5e3d4854b93b4af717d1223dd12"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef int64_t acp_wsd_t; <br /></td></tr>
+<tr class="separator:ga91a6d5e3d4854b93b4af717d1223dd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga027e316677ddfcf17b054627a8e442a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga027e316677ddfcf17b054627a8e442a5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_assign</b>(type, ...)                          &#160;&#160;&#160;acp_assign_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga027e316677ddfcf17b054627a8e442a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bb7e582a54519dd09e62f52f39b9458"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9bb7e582a54519dd09e62f52f39b9458"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_assign_range</b>(type, ...)              &#160;&#160;&#160;acp_assign_range_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga9bb7e582a54519dd09e62f52f39b9458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ff644eca29896dc5f91989e0be833e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6ff644eca29896dc5f91989e0be833e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_at</b>(type, ...)                                  &#160;&#160;&#160;acp_at_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga6ff644eca29896dc5f91989e0be833e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a70a92caa8f0d9bb53cc70e774b8f76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2a70a92caa8f0d9bb53cc70e774b8f76"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_back</b>(type, ...)                              &#160;&#160;&#160;acp_back_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga2a70a92caa8f0d9bb53cc70e774b8f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64509efc4404df65415f4dc47f35e888"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga64509efc4404df65415f4dc47f35e888"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_begin</b>(type, ...)                            &#160;&#160;&#160;acp_begin_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga64509efc4404df65415f4dc47f35e888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac245361b61a5f80fbf933075ce67cc51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac245361b61a5f80fbf933075ce67cc51"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_bucket</b>(type, ...)                          &#160;&#160;&#160;acp_bucket_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gac245361b61a5f80fbf933075ce67cc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf389cf5540eb96cbef85cb9510f0116d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf389cf5540eb96cbef85cb9510f0116d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_bucket_count</b>(type, ...)              &#160;&#160;&#160;acp_bucket_count_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaf389cf5540eb96cbef85cb9510f0116d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace895868445cf77e445814cee450468c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gace895868445cf77e445814cee450468c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_bucket_size</b>(type, ...)                &#160;&#160;&#160;acp_bucket_size_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gace895868445cf77e445814cee450468c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga888db45cb4644b76a30c47415b0e912d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga888db45cb4644b76a30c47415b0e912d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_capacity</b>(type, ...)                      &#160;&#160;&#160;acp_capacity_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga888db45cb4644b76a30c47415b0e912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ab5fa90ca007033f04cfef96ee264c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6ab5fa90ca007033f04cfef96ee264c8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_clear</b>(type, ...)                            &#160;&#160;&#160;acp_clear_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga6ab5fa90ca007033f04cfef96ee264c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c43eafad4cb9d6a24480922ad13f772"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c43eafad4cb9d6a24480922ad13f772"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_count</b>(type, ...)                            &#160;&#160;&#160;acp_count_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga1c43eafad4cb9d6a24480922ad13f772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf123f1a15748bded27efc2910ff90814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf123f1a15748bded27efc2910ff90814"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_create</b>(type, ...)                          &#160;&#160;&#160;acp_create_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaf123f1a15748bded27efc2910ff90814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cbd259f397f6c90608df38b4fce640c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2cbd259f397f6c90608df38b4fce640c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_destroy</b>(type, ...)                        &#160;&#160;&#160;acp_destroy_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga2cbd259f397f6c90608df38b4fce640c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d2f65f80d2ff5e5e3b51c6d13cc4d9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7d2f65f80d2ff5e5e3b51c6d13cc4d9f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_empty</b>(type, ...)                            &#160;&#160;&#160;acp_empty_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga7d2f65f80d2ff5e5e3b51c6d13cc4d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3720d5f16b536aa74a8d2f110867b23a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3720d5f16b536aa74a8d2f110867b23a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_end</b>(type, ...)                                &#160;&#160;&#160;acp_end_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga3720d5f16b536aa74a8d2f110867b23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga272cf7d1ec584f38d1fce13fc82fddd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga272cf7d1ec584f38d1fce13fc82fddd9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_erase</b>(type, ...)                            &#160;&#160;&#160;acp_erase_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga272cf7d1ec584f38d1fce13fc82fddd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad52f2cc27d31cc639704ee81d89f24b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad52f2cc27d31cc639704ee81d89f24b6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_erase_range</b>(type, ...)                &#160;&#160;&#160;acp_erase_range_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gad52f2cc27d31cc639704ee81d89f24b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2808498b9ff71b54ee8943a56e57c3b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2808498b9ff71b54ee8943a56e57c3b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_find</b>(type, ...)                              &#160;&#160;&#160;acp_find_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga2808498b9ff71b54ee8943a56e57c3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa13a9e40f5dbe299f08e32d2066a5fe8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa13a9e40f5dbe299f08e32d2066a5fe8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_front</b>(type, ...)                            &#160;&#160;&#160;acp_front_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaa13a9e40f5dbe299f08e32d2066a5fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga214a3c0a74e5c6340cf342a2ac25c0c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga214a3c0a74e5c6340cf342a2ac25c0c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_insert</b>(type, ...)                          &#160;&#160;&#160;acp_insert_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga214a3c0a74e5c6340cf342a2ac25c0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1d5f17eecdd85bb3735966f7e4f5ced"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa1d5f17eecdd85bb3735966f7e4f5ced"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_insert_range</b>(type, ...)              &#160;&#160;&#160;acp_insert_range_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaa1d5f17eecdd85bb3735966f7e4f5ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fd661817c6d438209f036b30bc201b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8fd661817c6d438209f036b30bc201b3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_merge</b>(type, ...)                            &#160;&#160;&#160;acp_merge_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga8fd661817c6d438209f036b30bc201b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8d149977f68b7bb1c72129883586b36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf8d149977f68b7bb1c72129883586b36"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_pop_back</b>(type, ...)                      &#160;&#160;&#160;acp_pop_back_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaf8d149977f68b7bb1c72129883586b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5217e667189ccab0ee3d9c67c4876ae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5217e667189ccab0ee3d9c67c4876ae2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_pop_front</b>(type, ...)                    &#160;&#160;&#160;acp_pop_front_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga5217e667189ccab0ee3d9c67c4876ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b17b0fa80efb7bb894bcf3024c94590"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1b17b0fa80efb7bb894bcf3024c94590"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_push_back</b>(type, ...)                    &#160;&#160;&#160;acp_push_back_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga1b17b0fa80efb7bb894bcf3024c94590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5499cf82b8751fed988ef32b4a7fa286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5499cf82b8751fed988ef32b4a7fa286"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_push_front</b>(type, ...)                  &#160;&#160;&#160;acp_push_front_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga5499cf82b8751fed988ef32b4a7fa286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe85bda6a73ab567ea7c2ae07083bd30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafe85bda6a73ab567ea7c2ae07083bd30"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_remove</b>(type, ...)                          &#160;&#160;&#160;acp_remove_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gafe85bda6a73ab567ea7c2ae07083bd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc9cc139be07f2429b6681c9184baadc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabc9cc139be07f2429b6681c9184baadc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_reserve</b>(type, ...)                        &#160;&#160;&#160;acp_reserve_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gabc9cc139be07f2429b6681c9184baadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ff0a924732b5434da654384e2c20075"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5ff0a924732b5434da654384e2c20075"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_reverse</b>(type, ...)                        &#160;&#160;&#160;acp_reverse_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga5ff0a924732b5434da654384e2c20075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga140da4d57dd4ff11885614833ba1956b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga140da4d57dd4ff11885614833ba1956b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_size</b>(type, ...)                              &#160;&#160;&#160;acp_size_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga140da4d57dd4ff11885614833ba1956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga140da4d57dd4ff11885614833ba1956b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga140da4d57dd4ff11885614833ba1956b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_size</b>(type, ...)                              &#160;&#160;&#160;acp_size_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga140da4d57dd4ff11885614833ba1956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67d8fecc035c884c8b138c2e4773b157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga67d8fecc035c884c8b138c2e4773b157"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_sort</b>(type, ...)                              &#160;&#160;&#160;acp_sort_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga67d8fecc035c884c8b138c2e4773b157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4e5355fc7043fe391ce450eb1d91fbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa4e5355fc7043fe391ce450eb1d91fbf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_splice</b>(type, ...)                          &#160;&#160;&#160;acp_splice_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gaa4e5355fc7043fe391ce450eb1d91fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga377411a0488180801c3209585a6ea062"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga377411a0488180801c3209585a6ea062"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_swap</b>(type, ...)                              &#160;&#160;&#160;acp_swap_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga377411a0488180801c3209585a6ea062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76425e26238062eec8e21ebff33eaa7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga76425e26238062eec8e21ebff33eaa7d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_unique</b>(type, ...)                          &#160;&#160;&#160;acp_unique_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga76425e26238062eec8e21ebff33eaa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga537cffee19bcb20f183082b3edd1024d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga537cffee19bcb20f183082b3edd1024d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_advance</b>(type, ...)                        &#160;&#160;&#160;acp_advance_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga537cffee19bcb20f183082b3edd1024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac446f8c6e4d5f379f19c0429ab74a02f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac446f8c6e4d5f379f19c0429ab74a02f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_decrement</b>(type, ...)                    &#160;&#160;&#160;acp_decrement_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gac446f8c6e4d5f379f19c0429ab74a02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8898241a32a00ba423c645d3a88df405"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8898241a32a00ba423c645d3a88df405"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_dereference</b>(type, ...)                &#160;&#160;&#160;acp_dereference_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga8898241a32a00ba423c645d3a88df405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga855f49e4270e1b25601f1e9c13ee2faa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga855f49e4270e1b25601f1e9c13ee2faa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_dereference_value</b>(type, ...)    &#160;&#160;&#160;acp_dereference_value_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga855f49e4270e1b25601f1e9c13ee2faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73366fbd56c42e4ca9f2e2e734320e7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga73366fbd56c42e4ca9f2e2e734320e7f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_distance</b>(type, ...)                      &#160;&#160;&#160;acp_distance_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga73366fbd56c42e4ca9f2e2e734320e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16fa8bacd9ab2b349d2ea4ad50f8027b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga16fa8bacd9ab2b349d2ea4ad50f8027b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_increment</b>(type, ...)                    &#160;&#160;&#160;acp_increment_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:ga16fa8bacd9ab2b349d2ea4ad50f8027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d0a9fb1591dbafd14a19677fc174ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad9d0a9fb1591dbafd14a19677fc174ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>acp_size_value</b>(type, ...)                  &#160;&#160;&#160;acp_size_value_##type(__VA_ARGS__)</td></tr>
+<tr class="separator:gad9d0a9fb1591dbafd14a19677fc174ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ga3f692537abdbabc473e123b959457538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3f692537abdbabc473e123b959457538"></a>
+typedef <a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsditem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>acp_wsd_t</b></td></tr>
+<tr class="separator:ga3f692537abdbabc473e123b959457538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga4dd11fd399e6cea17504f4e585d538f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#ga4dd11fd399e6cea17504f4e585d538f8">acp_create_ws</a> (size_t size)</td></tr>
+<tr class="memdesc:ga4dd11fd399e6cea17504f4e585d538f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワークスペース生成  <a href="#ga4dd11fd399e6cea17504f4e585d538f8">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4dd11fd399e6cea17504f4e585d538f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga092d6e8739d90aed8893f75bbad66b27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#ga092d6e8739d90aed8893f75bbad66b27">acp_setparams_ws</a> (size_t proc_start, size_t size_default)</td></tr>
+<tr class="memdesc:ga092d6e8739d90aed8893f75bbad66b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワークスペースリセット  <a href="#ga092d6e8739d90aed8893f75bbad66b27">[詳解]</a><br /></td></tr>
+<tr class="separator:ga092d6e8739d90aed8893f75bbad66b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e4d8dc9515cb85eef8706202e7f53a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#ga9e4d8dc9515cb85eef8706202e7f53a1">acp_destroy_ws</a> (<a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a> WSD)</td></tr>
+<tr class="memdesc:ga9e4d8dc9515cb85eef8706202e7f53a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワークスペース破棄  <a href="#ga9e4d8dc9515cb85eef8706202e7f53a1">[詳解]</a><br /></td></tr>
+<tr class="separator:ga9e4d8dc9515cb85eef8706202e7f53a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadebb2467fd5aaad0b07ff0c279cbaab5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#gadebb2467fd5aaad0b07ff0c279cbaab5">acp_read_ws</a> (<a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a> WSD, <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga, size_t size, size_t offset)</td></tr>
+<tr class="memdesc:gadebb2467fd5aaad0b07ff0c279cbaab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワークスペース読み出し  <a href="#gadebb2467fd5aaad0b07ff0c279cbaab5">[詳解]</a><br /></td></tr>
+<tr class="separator:gadebb2467fd5aaad0b07ff0c279cbaab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4b6589b70a9788ada122a8405f76bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#gaf4b6589b70a9788ada122a8405f76bc4">acp_write_ws</a> (<a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a> WSD, const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga, size_t size, size_t offset)</td></tr>
+<tr class="memdesc:gaf4b6589b70a9788ada122a8405f76bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワークスペース書き込み  <a href="#gaf4b6589b70a9788ada122a8405f76bc4">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf4b6589b70a9788ada122a8405f76bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58dc660d5325740abdf1e234e7bb3ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#ga58dc660d5325740abdf1e234e7bb3ff8">acp_malloc</a> (size_t size, int rank)</td></tr>
+<tr class="memdesc:ga58dc660d5325740abdf1e234e7bb3ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルメモリ割り当て  <a href="#ga58dc660d5325740abdf1e234e7bb3ff8">[詳解]</a><br /></td></tr>
+<tr class="separator:ga58dc660d5325740abdf1e234e7bb3ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf00486dc3100e4e9fc689efdd1ae0f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7d/group__acpdl.html#gaf00486dc3100e4e9fc689efdd1ae0f76">acp_free</a> (<a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga)</td></tr>
+<tr class="memdesc:gaf00486dc3100e4e9fc689efdd1ae0f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルメモリ解放  <a href="#gaf00486dc3100e4e9fc689efdd1ae0f76">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf00486dc3100e4e9fc689efdd1ae0f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<p>This library provides various data handling functions: Vector, List, Deque, Set, Map</p>
+<p>........... </p>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="ga4dd11fd399e6cea17504f4e585d538f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a> acp_create_ws </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワークスペース生成 </p>
+<p>ワークスペースを生成する。 全プロセスで集団的に呼び出す必要がある。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>ワークスペースのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ACP_WSD_NULL</td><td>失敗 </td></tr>
+    <tr><td class="paramname">acp_wsd_t</td><td>ワークスペース記述子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9e4d8dc9515cb85eef8706202e7f53a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_destroy_ws </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a>&#160;</td>
+          <td class="paramname"><em>WSD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワークスペース破棄 </p>
+<p>ワークスペースを破棄する。 全プロセスで集団的に呼び出す必要がある。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WSD</td><td>ワークスペース記述子 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf00486dc3100e4e9fc689efdd1ae0f76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルメモリ解放 </p>
+<p>取得したグローバルメモリを解放する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ga</td><td>先頭グローバルアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga58dc660d5325740abdf1e234e7bb3ff8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> acp_malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルメモリ割り当て </p>
+<p>任意のプロセスからグローバルメモリを取得する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>わり当てるメモリのサイズ </td></tr>
+    <tr><td class="paramname">rank</td><td>メモリをわり当てるプロセス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ACP_GA_NULL</td><td>失敗 </td></tr>
+    <tr><td class="paramname">acp_ga_t</td><td>あり当てられたメモリの先頭アドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gadebb2467fd5aaad0b07ff0c279cbaab5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acp_read_ws </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a>&#160;</td>
+          <td class="paramname"><em>WSD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワークスペース読み出し </p>
+<p>ワークスペースの指定位置からデータを読み出す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WSD</td><td>ワークスペース記述子 </td></tr>
+    <tr><td class="paramname">ga</td><td>読み出しデータ格納グローバルアドレス </td></tr>
+    <tr><td class="paramname">size</td><td>読み出しデータサイズ </td></tr>
+    <tr><td class="paramname">offset</td><td>読み出し開始位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">1</td><td>Fail </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga092d6e8739d90aed8893f75bbad66b27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acp_setparams_ws </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>proc_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size_default</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワークスペースリセット </p>
+<p>ワークスペース開始ランク番号をリセットする． 全プロセスで集団的に呼び出す必要がある。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>ワークスペースのスタートランク番号 </td></tr>
+    <tr><td class="paramname">size_default</td><td>各プロセスでのデフォルトアロケートサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">いつも</td><td>0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf4b6589b70a9788ada122a8405f76bc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acp_write_ws </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/df5/structacp__wsditem.html">acp_wsd_t</a>&#160;</td>
+          <td class="paramname"><em>WSD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワークスペース書き込み </p>
+<p>ワークスペースの指定位置にデータを書き込む。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WSD</td><td>ワークスペース記述子 </td></tr>
+    <tr><td class="paramname">ga</td><td>書き込みデータ格納グローバルアドレス </td></tr>
+    <tr><td class="paramname">size</td><td>書き込みデータサイズ </td></tr>
+    <tr><td class="paramname">offset</td><td>書き込み開始位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">1</td><td>Fail </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <img class="footer" src="../../by-sa.png" alt="CreativeCommons by sa"/>
+    <li class="footer">2016年06月02日(木) 15時45分02秒作成 - ACP Library / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>ACP Library: 総合概要</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ace_icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ACP Library
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('index.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ACP Library 詳解</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introduction</h1>
+<h2><a class="anchor" id="about"></a>
+About This Document</h2>
+<p>This document introduces the specifications of the interfaces of Advanced Communication Primitives (ACP) Library. This library is designed to enable applications with sufficient inherent parallelism to achieve high scalability up to exa-scale computing systems, where the number of processes is expected to be more than a million.</p>
+<h2><a class="anchor" id="motivation"></a>
+Motivation</h2>
+<p>As the performance of environments for high-performance computing (HPC) is approaching from peta to exa, the number of cores in one node is increasing, while the amount of memory per node is expected to remain almost the same. Therefore, reducing memory consumption has become an important issue for achieving sustained scalability toward exa-scale computers.</p>
+<p>Especially, communication middleware on those environments must be carefully designed to achieve high memory efficiency. There is always a trade-off between the memory consumption and the performance of communication. To avoid conflicts of resources and achieve high performance, sufficient amount of buffers should be allocated. Therefore, appropriate control of the allocation and deallocation of buffers is a key to enable memory-efficient communications.</p>
+<h2><a class="anchor" id="approach"></a>
+Approach</h2>
+<p>To minimize the requirements of memory consumption at the initialization, ACP Library provides RDMA model as the basic communication layer. On interconnect networks where RDMA is supported as a fundamental facility, this layer can be implemented with minimal memory consumption and overhead.</p>
+<p>Since programming with RDMA needs detailed operations such as memory registrations, address exchanges and synchronizations, ACP also prepares some sets of programmer-friendly interfaces as the middle layer. To enable the library to consume just-enough amount of memory, each interface of the middle layer requires explicit allocation of the memory region before using it. This region can be explicitly de-allocated so that the memory region can be reused for other purposes.</p>
+<p>Each of the interfaces of this middle layer is primitive and independent. For example, the channel interface in this layer only supports one-directional and in-order data transfer between a pair of processes. This helps to minimize the memory consumption and overhead in the implementation. Also, the independent interfaces enable precise control of the allocation and de-allocation of memory regions for them. At this point, interfaces of channels, vectors, lists and memory allocation are defined in ACP. There are plans for other interfaces such as group communications, deques, maps, sets and counters.</p>
+<h2><a class="anchor" id="terminology"></a>
+Terminology</h2>
+<table class="doxtable">
+<tr>
+<th>term </th><th>description  </th></tr>
+<tr>
+<td>process </td><td>A unit of program execution by OS. </td></tr>
+<tr>
+<td>task </td><td>A unit of parallel program execution including multiple processes. </td></tr>
+<tr>
+<td>rank </td><td>A number to distinguish process in a task. </td></tr>
+<tr>
+<td>ACE project </td><td>Advanced Communication for Exa project. It develops a communication library with low memory consumption and low overhead. </td></tr>
+<tr>
+<td>ACP library </td><td>Advanced Communication Primitives library. A library that has been developed in the ACE project. </td></tr>
+<tr>
+<td>GMA </td><td>Global Memory Access. Direct access to the memory of a remote process in a task. </td></tr>
+<tr>
+<td>global memory </td><td>Memory region to which remote processes can establish GMAs. </td></tr>
+<tr>
+<td>starter memory </td><td>A region of global memory that is prepared in each rank at the initialization. </td></tr>
+<tr>
+<td>global address </td><td>64bit address space shared by all of the processes in a task. </td></tr>
+<tr>
+<td>address translation key </td><td>An identifier used for translating logical address to global address. </td></tr>
+<tr>
+<td>color </td><td>A number to distinguish the path for transferring data with GMA. </td></tr>
+<tr>
+<td>channel </td><td>Virtual path to transfer messages between a pair of processes. </td></tr>
+<tr>
+<td>vector </td><td>One-dimensional array. </td></tr>
+<tr>
+<td>list </td><td>Bi-directional list. </td></tr>
+<tr>
+<td>iterator </td><td>An index to refer to an element in a data structure. </td></tr>
+</table>
+<h1><a class="anchor" id="overview"></a>
+Overview</h1>
+<h2><a class="anchor" id="fundamentalDesign"></a>
+Fundamental Design</h2>
+<h3><a class="anchor" id="execModel"></a>
+Execution Model</h3>
+<p>The execution model of ACP is a single program multiple data (SPMD) model. Therefore, each process in a task executes the same program. Processes are distinguished by ranks. Ranks are mapped to the processes at the initialization. ACP also supports re-mapping ranks during the execution.</p>
+<h3><a class="anchor" id="commModels"></a>
+Communication Models</h3>
+<p>As written in the previous section, the basic communication model of ACP is RDMA. However, in this model, programmers need to write codes for memory registration, address exchange and appropriate synchronization before establishing data transfer. Therefore, ACP also supports additional two categories of interfaces as the middle layer, the communication patterns and the data structures. The communication pattern interfaces support explicit transfers of data on the local memory of each process. Currently, ACP provides one interface, channel, as this category of interfaces.</p>
+<p>On the other hand, the data structure interface supports implicit data transfer via the operations on dynamic distributed data structures. At this point, vector and list are supported in this category. The heart of this category is an asynchronous global memory allocator that allocates a segment of global memory involving no processor at the provider-side. The design concept of this category derives from the C/C++ languages and is more straightforward than the novel design concept of the basic layer.</p>
+<p>As mentioned previously, memory efficiency is the target property in the design of ACP. Towards this target, each interface in the middle layer is designed to support a primitive facility so that it can be implemented with minimal memory consumption and overhead. In addition to that, to enable just-enough memory consumption, each interface of the middle layer consists of functions for allocation and de-allocation. Programs must explicitly call the allocation function of the interface before establishing data-transfer operations in it. This function allocates a region of memory to be used by a set of processes that participate in the corresponding communication pattern or the data structure. Eventually the information required for establishing communications on the interface is exchanged until the completion of the first data transfer with it. On the other hand, the de-allocation function frees the memory regions allocated for the interface.</p>
+<p>In a program, the same set of processes can call the allocation function of the interface multiple times. This will prepare independent memory region for each call. This policy can cause redundant allocation of memory region. However, sharing resources among multiple calls of allocation can complicates the mechanisms for handling memory regions and causes higher memory consumptions and overheads.</p>
+<p>To establish communications that are not supported in the middle layer, the programmers can use the interfaces of the basic RDMA operations of ACP. It consists of two categories of interfaces, the global memory management (GMM) and the global memory access (GMA). In this model, any local memory regions can be mapped to the global address space shared among processes. ACP uses 64bit unsigned integer as the global address that specifies the position in the space. As GMA, the remote copy operation and some atomic operations are supported.</p>
+<h2><a class="anchor" id="interfaces"></a>
+Interfaces</h2>
+<h3><a class="anchor" id="infrastructure"></a>
+Infrastructure</h3>
+<p>Each process starts its execution as a part of an ACP program by calling the initialization function, <em>acp_init</em>, and ends by calling finalization function, <b>acp_finalize</b>. ACP also prepares a function for aborting the program, <b>acp_abort</b>, in case of an error.</p>
+<p>The reset function, <b>acp_reset</b>, remaps ranks to the processes as specified by its argument. There are functions to query current rank of the process, <b>acp_rank</b>, and the total number of processes, <b>acp_procs</b>.</p>
+<p>Processes are implicitly synchronized at the initialization, reset and finalization. There is also a synchronization function, <b>acp_sync</b>, to explicitly synchronize all of the processes. This function returns after determining arrivals of all processes.</p>
+<h3><a class="anchor" id="channel"></a>
+Channel</h3>
+<p>This interface provides a virtual pass for message passing from one process to another. The data transfer supported by it is single direction and in-order. Therefore, the implementation of it can be simple and efficient. Before establishing data transfer with the interface, both the sender process and the receiver process must call the allocation function to establish a channel between them. If a channel has become useless, the program can free the channel by calling the de-allocation function at both sides.</p>
+<div class="image">
+<img src="fig-channel.png" alt="fig-channel.png"/>
+<div class="caption">
+schematic picture of Channel interface</div></div>
+ <p>The allocation function, <b>acp_create_ch</b>, of this interface allocates a region of memory according to the role of the process that invoked the function. After that, it starts exchanging the information about the region with another peer of the channel to establish the connection of the channel. Then, it returns a handle of the channel, with the data type of <b>acp_ch_t</b>, without waiting for the completion of the connection. The library implicitly progresses the establishment of the connection.</p>
+<p>The non-blocking functions for sending and receiving messages, <b>acp_nbsend_ch</b> and <b>acp_nbrecv_ch</b>, on a channel can be invoked before the completion of its connection. Each of these functions stores the information about the invocation in the request queue of the channel, and returns a request handle with the data type of <b>acp_request_t</b>. It starts transferring messages after it has completed the connection. The wait function, <b>acp_wait_ch</b>, wait for the completion of the request.</p>
+<p>The non-blocking de-allocation function, <b>acp_free_ch</b>, starts freeing memory regions of the channel specified by the handle. The behavior of the functions of send and receive on the channel that has been specified for this function is not defined.</p>
+<h3><a class="anchor" id="vector"></a>
+Vector</h3>
+<p>The vector interface provides functions to manipulate dynamic array. Each element of a vector can be manipulated by an iterator. An iterator is valid only at the process that retrieved it. Iterators will be invalid after modification of the vector by: <b>acp_assign_vector</b>, <b>acp_assign_range_vector</b>, <b>acp_clear_vector</b>, <b>acp_destroy_vector</b>, <b>acp_erase_vector</b>, <b>acp_erase_range_vector</b>, <b>acp_insert_vector</b>, <b>acp_insert_range_vector</b> and <b>acp_swap_vector</b>.</p>
+<h3><a class="anchor" id="deque"></a>
+Deque</h3>
+<p>The deque interface provides functions for establishing the data structure and functions of doule-ended queues.Each element of a deque can be manipulated by an iterator. An iterator is valid only at the process that retrieved it. Iterators will be invalid after modification of the deque by: <b>acp_assign_deque</b>, <b>acp_assign_range_deque</b>, <b>acp_clear_deque</b>, <b>acp_destroy_deque</b>, <b>acp_erase_deque</b>, <b>acp_erase_range_deque</b>, <b>acp_insert_deque</b>, <b>acp_insert_range_deque</b> and <b>acp_swap_deque</b>.</p>
+<h3><a class="anchor" id="list"></a>
+List</h3>
+<p>The list interface provides functions for establishing the data structure and algorithms of bidirectional linked list. Each element of a list can be manipulated by an iterator. An iterator is valid only at the process that retrieved it. Iterators will be invalid after modification of the list by: <b>acp_assign_list</b>, <b>acp assign_range_list</b>, <b>acp_clear_list</b>, <b>acp_destroy_list</b>, <b>acp_erase_list</b>, <b>acp_erase_range_list</b>, <b>acp_insert_list</b>, <b>acp_insert_range_list</b>, <b>acp_merge_list</b>, <b>acp_remove_list</b>, <b>acp_reverse_list</b>, <b>acp_splice_list</b>, <b>acp_swap_list</b> and <b>acp_unique_list</b>.</p>
+<h3><a class="anchor" id="map"></a>
+Map</h3>
+<p>The map interface provides the data structure and algorithms of associative arrays. The type for referencing maps is <b><a class="el" href="d9/d73/structacp__map__t.html">acp_map_t</a></b>, the type for the iterator of maps is <b><a class="el" href="d0/dac/structacp__map__it__t.html">acp_map_it_t</a></b>, and the type for returning result of finding element in a map is <b><a class="el" href="de/daa/structacp__map__ib__t.html">acp_map_ib_t</a></b>. Maps are created via the constructor function, acp_create_map. This function prepares an empty map distributed among a group of processes. As an argument, it accepts the number of processes, the array of ranks of the processes in the group, the number of slots and the rank to place the control structure of the map. Elements can be added to a map via the function <b>acp_insert_map</b>. In addition to the map to insert, this function accepts the key and the value of the element, as an argument. Each of the key and the value are specified by a pair of the address and the size in byte. The rank to place the element to be inserted is decided according to the hash value calculated from the key. <b>acp_find_map</b> searches the key in a map. It returns the value true or false according to the result, and the iterator of the element with the key if it has been found.</p>
+<h3><a class="anchor" id="malloc"></a>
+Malloc</h3>
+<p>The malloc interface provides the functions for asynchronous allocation and de-allocation of global memory. It is the same as that of the asynchronous global heap that designs a memory pool to be accessible via RDMA as well as via processor instructions. This interface consists of the <b>acp_malloc</b> function that allocates a segment of global memory from specified process by a rank number. A global memory segment allocated by this function can be freed by the <b>acp_free</b> function.</p>
+<h3><a class="anchor" id="gmmSSSec"></a>
+Global Memory Management</h3>
+<p>The basic layer provides global address space shared among all of the processes. This space is addressed by 64bit unsigned integer, so that it can be directly handles by the atomic operations of CPUs and devices.</p>
+<p>Any local memory space of any process can be mapped to this space via the registration function, <b>acp_register_memory</b>, of this layer. It returns a key with the data type of <b>acp_atkey_t</b>. There is also a de-registration function, <b>acp_unregister_memory</b>, to unregister the region of the specified key. Global address in a registered region can be retrieved by a query function, <b>acp_query_ga</b>. It returns the address with the data type of <b>acp_ga_t</b>.</p>
+<p>At the registration, in addition to the start address and the size of the local region to be mapped, the color of the global address can be specified. Color is used for specifying device in the node to be used for making remote access to the region. There is a function, <b>acp_colors</b>, to query the maximum number of colors available on the current system. At the initialization, a special region, called starter memory, is allocated on each process. Each of the starter memories of the processes is registered to the global address space, and there is a function, <b>acp_query_starter_ga</b>, to query for the global address of the starter memory of the specified rank. This region is mainly used for exchanging global addresses before performing RDMA operations on the global address space.</p>
+<h3><a class="anchor" id="gmaSSSec"></a>
+Global Memory Access</h3>
+<p>The RDMA operations on the global memory space of the basic layer is called global memory access (GMA). ACP prepares GMA functions, such as <b>acp_copy</b>, <b>acp_add4</b>, <b>acp_add8</b>, <b>acp_cas4</b> and so on, to perform copy and atomic operations on the global memory space. Unlike other communication libraries, both of the source and the destination of copy function can be remote.</p>
+<div class="image">
+<img src="fig-gma.png" alt="fig-gma.png"/>
+<div class="caption">
+schematic picture of Global Memory Access interface</div></div>
+ <p>All of the GMA functions are non-blocking. Therefore, each of them returns a GMA handle with the data type of <b>acp_handle_t</b> to wait for the completion. Each GMA function has an argument 'order' to specify the condition for starting the operation. If a GMA handle is specified for this argument, it will wait for the completion of the GMA of the handle before starting its access. If <b>ACP_HANDLE_NULL</b> is specified as the order, it starts the access immediately. If <b>ACP_HANDLE_ALL</b> is specified, it will wait for the completions of all of the previously invoked GMAs. If <b>ACP_HANDLE_CONT</b> is specified as the order, and if the GMA that is invoked immediately before this one has the same source rank, target rank, source color and target color, it can start its access with the same condition of the previous one, as far as it will not overtake the order. If there is any difference in those parameters, the behavior is same as the case with <b>ACP_HANDLE_ALL</b>. There can be an implementation that always performs the same way as the case with <b>ACP_HANDLE_ALL</b>, even if <b>ACP_HANDLE_CONT</b> is specified. The completion function, <b>acp_complete</b>, waits for the completion of the GMA specified by the handle. The completions of GMA functions are ensured in-order. This means that the completion of one GMA function ensures the completion of all of the other GMA functions that have been invoked earlier than it on the process. There is also a function, <b>acp_inquire</b>, which check the completions of the GMA specified by the handle and the GMAs that have been invoked before it.</p>
+<h1><a class="anchor" id="usage"></a>
+Usage</h1>
+<h2><a class="anchor" id="installation"></a>
+Installation</h2>
+<p>The simplest way to install ACP library is typically a combination of running "configure" and "make". Execute the following commands to install the ACP library system from within the directory at the top of the tree:</p>
+<p><code>shell$ ./configure &ndash;prefix=/where/to/install<br />
+ [...lots of output...]<br />
+shell$ make all install </code></p>
+<p>If you need special access to install, then you can execute "make all" as a user with write permissions in the build tree, and a separate "make install" as a user with write permissions to the install tree.</p>
+<p>See INSTALL for more details.</p>
+<h2><a class="anchor" id="compilation"></a>
+Compilation</h2>
+<p>ACP provides "wrapper" compilers that should be used for compiling ACP applications: </p><ul>
+<li>C: <code>acpcc</code>, <code>acpgcc</code> </li>
+<li>C++: <code>acpc++</code>, <code>acpcxx</code> </li>
+<li>Fortran: <code>acpgc</code> (not provided yet)</li>
+</ul>
+<p>For example:</p>
+<p><code> shell$ acpcc hello_world_acp.c -o hello_world_acp -g<br />
+shell$ </code></p>
+<p>All the wrapper compilers do is add a variety of compiler and linker flags to the command line and then invoke a back-end compiler. To be specific: the wrapper compilers do not parse source code at all; they are solely command-line manipulators, and have nothing to do with the actual compilation or linking of programs. The end result is an ACP executable that is properly linked to all the relevant libraries.</p>
+<p>Customizing the behavior of the wrapper compilers is possible (e.g., changing the compiler [not recommended] or specifying additional compiler/linker flags).</p>
+<h2><a class="anchor" id="execution"></a>
+Execution</h2>
+<p>ACP library supports acprun program to launch ACP appliations. For example:</p>
+<p><code> shell$ acprun -np 2 hello_world_acp </code></p>
+<p>This launches two <code>hello_world_acp</code> applications on localhost. Option <code>"-np 2"</code> is same as long option <code>"--acp-nprocs=2"</code>. Please note that <code>"-np nprocs"</code> has to be 'first' option of acprun command. There are no such limitations for long option.</p>
+<p>You can specify a <code>&ndash;acp-nodefile=nodefile</code> option to indicate hostnames on which <code>hello_world_acp</code> command will be launched.</p>
+<p>If you want launch two processes on pc01 and pc02, use following command:</p>
+<p><code> shell$ acprun -np 2 &ndash;acp-nodefile=nodefile hello_world_acp<br />
+</code> with the following nodefile:<br />
+<code> ------------------------------------------------------------------------&mdash;<br />
+pc01<br />
+pc01<br />
+pc02<br />
+pc02<br />
+------------------------------------------------------------------------&mdash;<br />
+</code></p>
+<p>To specify network device, for example infiniband (or udp, tofu), use <code>&ndash;acp-envent=ib</code> (or udp, tofu) option as follows:</p>
+<p><code> shell$ acprun -np 2 &ndash;acp-nodefile=nodefile &ndash;acp-nodefile=ib hello_world_acp </code></p>
+<p>If you want control starter memory size of ACP basic layer library, use <code>&ndash;acp-startermemsize=size</code> (byte unit) option as follows:</p>
+<p><code> shell$ acprun -np 2 &ndash;acp-nodefile=nodefile &ndash;acp-nodefile=ib &ndash;acp-startermemsize=4096 hello_world_acp </code></p>
+<p>Notice: </p><ul>
+<li>Other <code>"--acp-*"</code> options are parsed as errors in regard to invalid option, even though that option is used as user program option. </li>
+<li>Tofu network device may not supported in this version. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <img class="footer" src="by-sa.png" alt="CreativeCommons by sa"/>
+    <li class="footer">2016年06月02日(木) 15時45分03秒作成 - ACP Library / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

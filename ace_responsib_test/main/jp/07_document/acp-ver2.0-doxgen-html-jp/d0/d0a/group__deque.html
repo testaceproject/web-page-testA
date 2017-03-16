@@ -1,0 +1,1125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>ACP Library: ACP Middle Layer Dara Library Deque</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ace_icon.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ACP Library
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>総合概要</span></a></li>
+      <li><a href="../../modules.html"><span>モジュール</span></a></li>
+      <li><a href="../../annotated.html"><span>データ構造</span></a></li>
+      <li><a href="../../files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/d0a/group__deque.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">データ構造</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">ACP Middle Layer Dara Library Deque<div class="ingroups"><a class="el" href="../../dc/d6c/group__acpml.html">ACP Middle Layer</a> &raquo; <a class="el" href="../../db/d7d/group__acpdl.html">ACP Middle Layer Data Library</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+ACP Middle Layer Dara Library Deque 連携図</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="../../d0/d0a/group__deque.png" border="0" alt="" usemap="#d0_2d0a_2group____deque"/>
+<map name="d0_2d0a_2group____deque" id="d0_2d0a_2group____deque">
+<area shape="rect" id="node1" href="../../db/d7d/group__acpdl.html" title="ACP Middle Layer Data\l Library" alt="" coords="5,5,165,47"/>
+</map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga54fac6a76af67cb003145075e035f4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga54fac6a76af67cb003145075e035f4e9">acp_assign_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque1, <a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque2)</td></tr>
+<tr class="memdesc:ga54fac6a76af67cb003145075e035f4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック代入  <a href="#ga54fac6a76af67cb003145075e035f4e9">[詳解]</a><br /></td></tr>
+<tr class="separator:ga54fac6a76af67cb003145075e035f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5af6d8bb047ffba6e9d65eb5a00b16ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga5af6d8bb047ffba6e9d65eb5a00b16ad">acp_assign_range_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> start, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> end)</td></tr>
+<tr class="memdesc:ga5af6d8bb047ffba6e9d65eb5a00b16ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック範囲代入  <a href="#ga5af6d8bb047ffba6e9d65eb5a00b16ad">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5af6d8bb047ffba6e9d65eb5a00b16ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f71c264dc4863995a3242d0e8db7509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga5f71c264dc4863995a3242d0e8db7509">acp_at_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, int index)</td></tr>
+<tr class="memdesc:ga5f71c264dc4863995a3242d0e8db7509"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック直接参照  <a href="#ga5f71c264dc4863995a3242d0e8db7509">[詳解]</a><br /></td></tr>
+<tr class="separator:ga5f71c264dc4863995a3242d0e8db7509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9ffc632897e1aa4110e0787bd221466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gae9ffc632897e1aa4110e0787bd221466">acp_begin_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:gae9ffc632897e1aa4110e0787bd221466"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック先頭イテレータ  <a href="#gae9ffc632897e1aa4110e0787bd221466">[詳解]</a><br /></td></tr>
+<tr class="separator:gae9ffc632897e1aa4110e0787bd221466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3a1030fc726c783fc6ccccf7573f861"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gaa3a1030fc726c783fc6ccccf7573f861">acp_capacity_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:gaa3a1030fc726c783fc6ccccf7573f861"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック容量  <a href="#gaa3a1030fc726c783fc6ccccf7573f861">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa3a1030fc726c783fc6ccccf7573f861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa67c7f3046ee188b943139b980ae1585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gaa67c7f3046ee188b943139b980ae1585">acp_clear_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:gaa67c7f3046ee188b943139b980ae1585"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック消去  <a href="#gaa67c7f3046ee188b943139b980ae1585">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa67c7f3046ee188b943139b980ae1585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8216cbc779b2c20b7baf421e3d5f0d81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga8216cbc779b2c20b7baf421e3d5f0d81">acp_create_deque</a> (size_t size, int rank)</td></tr>
+<tr class="memdesc:ga8216cbc779b2c20b7baf421e3d5f0d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック生成  <a href="#ga8216cbc779b2c20b7baf421e3d5f0d81">[詳解]</a><br /></td></tr>
+<tr class="separator:ga8216cbc779b2c20b7baf421e3d5f0d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4cc9070816553b20a1686e26310f825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gad4cc9070816553b20a1686e26310f825">acp_destroy_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:gad4cc9070816553b20a1686e26310f825"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック破棄  <a href="#gad4cc9070816553b20a1686e26310f825">[詳解]</a><br /></td></tr>
+<tr class="separator:gad4cc9070816553b20a1686e26310f825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8ef676a996587d143b6552cfa673066"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gac8ef676a996587d143b6552cfa673066">acp_empty_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:gac8ef676a996587d143b6552cfa673066"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック空チェック  <a href="#gac8ef676a996587d143b6552cfa673066">[詳解]</a><br /></td></tr>
+<tr class="separator:gac8ef676a996587d143b6552cfa673066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433312db991a001969274ed05da6e7ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga433312db991a001969274ed05da6e7ff">acp_end_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:ga433312db991a001969274ed05da6e7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック末尾イテレータ  <a href="#ga433312db991a001969274ed05da6e7ff">[詳解]</a><br /></td></tr>
+<tr class="separator:ga433312db991a001969274ed05da6e7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31d3907f6852bb53d0a4fa33f9cb6985"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga31d3907f6852bb53d0a4fa33f9cb6985">acp_erase_deque</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> it, size_t size)</td></tr>
+<tr class="memdesc:ga31d3907f6852bb53d0a4fa33f9cb6985"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック削除  <a href="#ga31d3907f6852bb53d0a4fa33f9cb6985">[詳解]</a><br /></td></tr>
+<tr class="separator:ga31d3907f6852bb53d0a4fa33f9cb6985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab39a209f57adad763bf584fce9a848e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gab39a209f57adad763bf584fce9a848e5">acp_erase_range_deque</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> start, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> end)</td></tr>
+<tr class="memdesc:gab39a209f57adad763bf584fce9a848e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック範囲削除  <a href="#gab39a209f57adad763bf584fce9a848e5">[詳解]</a><br /></td></tr>
+<tr class="separator:gab39a209f57adad763bf584fce9a848e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c72fe98146a3fd95a2eb1a2f1f4f80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gad1c72fe98146a3fd95a2eb1a2f1f4f80">acp_insert_deque</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> it, const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga, size_t size)</td></tr>
+<tr class="memdesc:gad1c72fe98146a3fd95a2eb1a2f1f4f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック挿入  <a href="#gad1c72fe98146a3fd95a2eb1a2f1f4f80">[詳解]</a><br /></td></tr>
+<tr class="separator:gad1c72fe98146a3fd95a2eb1a2f1f4f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ce99b9d6119384ad29f81b4711a1449"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga4ce99b9d6119384ad29f81b4711a1449">acp_insert_range_deque</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> it, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> start, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> end)</td></tr>
+<tr class="memdesc:ga4ce99b9d6119384ad29f81b4711a1449"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック範囲挿入  <a href="#ga4ce99b9d6119384ad29f81b4711a1449">[詳解]</a><br /></td></tr>
+<tr class="separator:ga4ce99b9d6119384ad29f81b4711a1449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae46a387148ec33ad37891299bb7ee668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gae46a387148ec33ad37891299bb7ee668">acp_pop_back_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, size_t size)</td></tr>
+<tr class="memdesc:gae46a387148ec33ad37891299bb7ee668"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック末尾削除  <a href="#gae46a387148ec33ad37891299bb7ee668">[詳解]</a><br /></td></tr>
+<tr class="separator:gae46a387148ec33ad37891299bb7ee668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2a26ee4dac5e3fecbf6dff5d6a57547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gab2a26ee4dac5e3fecbf6dff5d6a57547">acp_pop_front_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, size_t size)</td></tr>
+<tr class="memdesc:gab2a26ee4dac5e3fecbf6dff5d6a57547"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック先頭削除  <a href="#gab2a26ee4dac5e3fecbf6dff5d6a57547">[詳解]</a><br /></td></tr>
+<tr class="separator:gab2a26ee4dac5e3fecbf6dff5d6a57547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3b3aa95fe7cf267c57505c1b9283702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gad3b3aa95fe7cf267c57505c1b9283702">acp_push_back_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga, size_t size)</td></tr>
+<tr class="memdesc:gad3b3aa95fe7cf267c57505c1b9283702"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック末尾追加  <a href="#gad3b3aa95fe7cf267c57505c1b9283702">[詳解]</a><br /></td></tr>
+<tr class="separator:gad3b3aa95fe7cf267c57505c1b9283702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14033182a52fc2cedff1dbdc957dec2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga14033182a52fc2cedff1dbdc957dec2e">acp_push_front_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> ga, size_t size)</td></tr>
+<tr class="memdesc:ga14033182a52fc2cedff1dbdc957dec2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック先頭追加  <a href="#ga14033182a52fc2cedff1dbdc957dec2e">[詳解]</a><br /></td></tr>
+<tr class="separator:ga14033182a52fc2cedff1dbdc957dec2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga007024a2bc1178cf09fcce08d3664a39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga007024a2bc1178cf09fcce08d3664a39">acp_reserve_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque, size_t size)</td></tr>
+<tr class="memdesc:ga007024a2bc1178cf09fcce08d3664a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック領域確保  <a href="#ga007024a2bc1178cf09fcce08d3664a39">[詳解]</a><br /></td></tr>
+<tr class="separator:ga007024a2bc1178cf09fcce08d3664a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45e13ce5d745353d5f85fd2c218f2986"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga45e13ce5d745353d5f85fd2c218f2986">acp_size_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque)</td></tr>
+<tr class="memdesc:ga45e13ce5d745353d5f85fd2c218f2986"><td class="mdescLeft">&#160;</td><td class="mdescRight">デックサイズ  <a href="#ga45e13ce5d745353d5f85fd2c218f2986">[詳解]</a><br /></td></tr>
+<tr class="separator:ga45e13ce5d745353d5f85fd2c218f2986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa021f0d2b032cd2f09b6b3d6d812c04c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gaa021f0d2b032cd2f09b6b3d6d812c04c">acp_swap_deque</a> (<a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque1, <a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> deque2)</td></tr>
+<tr class="memdesc:gaa021f0d2b032cd2f09b6b3d6d812c04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">デック交換  <a href="#gaa021f0d2b032cd2f09b6b3d6d812c04c">[詳解]</a><br /></td></tr>
+<tr class="separator:gaa021f0d2b032cd2f09b6b3d6d812c04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2028525112f32ac82927c4344aa55378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#ga2028525112f32ac82927c4344aa55378">acp_advance_deque_it</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> it, int n)</td></tr>
+<tr class="memdesc:ga2028525112f32ac82927c4344aa55378"><td class="mdescLeft">&#160;</td><td class="mdescRight">デックイテレータ前進  <a href="#ga2028525112f32ac82927c4344aa55378">[詳解]</a><br /></td></tr>
+<tr class="separator:ga2028525112f32ac82927c4344aa55378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee161b7fcca34f370b779dc6c1c2ea57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d5a/structacp__pair__t.html">acp_pair_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gaee161b7fcca34f370b779dc6c1c2ea57">acp_dereference_deque_it</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> it, size_t size)</td></tr>
+<tr class="memdesc:gaee161b7fcca34f370b779dc6c1c2ea57"><td class="mdescLeft">&#160;</td><td class="mdescRight">デックイテレータ間接参照  <a href="#gaee161b7fcca34f370b779dc6c1c2ea57">[詳解]</a><br /></td></tr>
+<tr class="separator:gaee161b7fcca34f370b779dc6c1c2ea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf730c0c541d3b80ea29f420c305c982c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0a/group__deque.html#gaf730c0c541d3b80ea29f420c305c982c">acp_distance_deque_it</a> (<a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> first, <a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> last)</td></tr>
+<tr class="memdesc:gaf730c0c541d3b80ea29f420c305c982c"><td class="mdescLeft">&#160;</td><td class="mdescRight">デックイテレータ距離  <a href="#gaf730c0c541d3b80ea29f420c305c982c">[詳解]</a><br /></td></tr>
+<tr class="separator:gaf730c0c541d3b80ea29f420c305c982c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<p>ACP Middle Layer Data Library Deque </p>
+<h2 class="groupheader">関数詳解</h2>
+<a class="anchor" id="ga2028525112f32ac82927c4344aa55378"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_advance_deque_it </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デックイテレータ前進 </p>
+<p>デックイテレータを前進する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>デックデータのイテレータ </td></tr>
+    <tr><td class="paramname">n</td><td>イテレータを進める数、負の値も指定可能 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>前進したデックイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga54fac6a76af67cb003145075e035f4e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_assign_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック代入 </p>
+<p>デック間でデータをコピーする。以前のデータは破棄される。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque1</td><td>コピー先デック型データの参照 </td></tr>
+    <tr><td class="paramname">deque2</td><td>コピー元デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5af6d8bb047ffba6e9d65eb5a00b16ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_assign_range_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック範囲代入 </p>
+<p>デックにstartからend直前までのデータをコピーする。 startとendは同じデックを指している必要がある。 以前のデータは破棄される。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>コピー先デック型データの参照 </td></tr>
+    <tr><td class="paramname">start</td><td>コピーするデータの先頭を指すイテレータ </td></tr>
+    <tr><td class="paramname">end</td><td>コピーするデータの末尾の直後を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5f71c264dc4863995a3242d0e8db7509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a> acp_at_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック直接参照 </p>
+<p>デックデータ上の任意の位置のグローバルアドレスを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+    <tr><td class="paramname">index</td><td>デック型データ先頭からの相対位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ACP_GA_NULL</td><td>失敗 </td></tr>
+    <tr><td class="paramname">ACP_GA_NULL以外</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gae9ffc632897e1aa4110e0787bd221466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_begin_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック先頭イテレータ </p>
+<p>デックの先頭データを指すイテレータを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>デックの先頭データを指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa3a1030fc726c783fc6ccccf7573f861"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t acp_capacity_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック容量 </p>
+<p>デックが領域拡張せずに保持できるサイズを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">size_t</td><td>デックが領域拡張せずに保持できるサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa67c7f3046ee188b943139b980ae1585"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_clear_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック消去 </p>
+<p>デックを０にする。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8216cbc779b2c20b7baf421e3d5f0d81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a> acp_create_deque </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック生成 </p>
+<p>任意のプロセスでデック型データを生成する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>要素サイズ </td></tr>
+    <tr><td class="paramname">rank</td><td>ランク番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">member ga == ACP_GA_NULL</td><td>失敗 </td></tr>
+    <tr><td class="paramname">以外</td><td>生成したデック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaee161b7fcca34f370b779dc6c1c2ea57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d5a/structacp__pair__t.html">acp_pair_t</a> acp_dereference_deque_it </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デックイテレータ間接参照 </p>
+<p>デックイテレータの参照先グローバルアドレスを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>デックデータのイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">acp_ga_t</td><td>デックイテレータの参照先グローバルアドレス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gad4cc9070816553b20a1686e26310f825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_destroy_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック破棄 </p>
+<p>デック型データを破棄する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf730c0c541d3b80ea29f420c305c982c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acp_distance_deque_it </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デックイテレータ距離 </p>
+<p>２つのデックイテレータ first, last 間の距離を返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>先頭位置のデックイテレータ </td></tr>
+    <tr><td class="paramname">last</td><td>最終位置のデックイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>２つのデックイテレータ first, last 間の距離 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac8ef676a996587d143b6552cfa673066"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int acp_empty_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック空チェック </p>
+<p>デックが空かどうかを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>空 </td></tr>
+    <tr><td class="paramname">0</td><td>データが存在する </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga433312db991a001969274ed05da6e7ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_end_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック末尾イテレータ </p>
+<p>デックの最終データの直後を指すイテレータを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デック型データの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>デックの最終データの直後を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga31d3907f6852bb53d0a4fa33f9cb6985"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_erase_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック削除 </p>
+<p>デックからデータを削除する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>削除するデータの先頭を指すイテレータ </td></tr>
+    <tr><td class="paramname">size</td><td>削除するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>削除されたデータの直後を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab39a209f57adad763bf584fce9a848e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_erase_range_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック範囲削除 </p>
+<p>デックからstartからend直前までのデータを削除する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>削除するデータの先頭を指すイテレータ </td></tr>
+    <tr><td class="paramname">end</td><td>削除するデータの末尾の直後を指すサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>削除されたデータの直後を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gad1c72fe98146a3fd95a2eb1a2f1f4f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_insert_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック挿入 </p>
+<p>指定した位置にデータを挿入する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>データを挿入する位置を指すイテレータ </td></tr>
+    <tr><td class="paramname">ga</td><td>挿入するデータを格納しているグルーバルアドレス </td></tr>
+    <tr><td class="paramname">size</td><td>挿入するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>挿入したデータの先頭を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4ce99b9d6119384ad29f81b4711a1449"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a> acp_insert_range_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック範囲挿入 </p>
+<p>他のデックの指定範囲を、指定した位置にデータを挿入する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>データを挿入する位置を指すイテレータ </td></tr>
+    <tr><td class="paramname">start</td><td>挿入するデータを先頭を指すイテレータ </td></tr>
+    <tr><td class="paramname">end</td><td>挿入するデータの末尾の直後を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d2/d4c/structacp__deque__it__t.html">acp_deque_it_t</a></td><td>挿入したデータの先頭を指すイテレータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gae46a387148ec33ad37891299bb7ee668"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_pop_back_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック末尾削除 </p>
+<p>デックの末尾から、指定サイズのデータを削除する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>データを削除するデックの参照 </td></tr>
+    <tr><td class="paramname">size</td><td>削除するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gab2a26ee4dac5e3fecbf6dff5d6a57547"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_pop_front_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック先頭削除 </p>
+<p>デックの先頭から、指定サイズのデータを削除する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>データを削除するデックの参照 </td></tr>
+    <tr><td class="paramname">size</td><td>削除するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gad3b3aa95fe7cf267c57505c1b9283702"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_push_back_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック末尾追加 </p>
+<p>デックの末尾に、指定サイズのデータを追加する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>データを追加するデックデータの査証 </td></tr>
+    <tr><td class="paramname">ga</td><td>追加するデータを格納しているグローバルアドレス </td></tr>
+    <tr><td class="paramname">size</td><td>追加するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga14033182a52fc2cedff1dbdc957dec2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_push_front_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/group__GMM.html#ga6cf0cdd0e57a80a441f65fbe4281d1f3">acp_ga_t</a>&#160;</td>
+          <td class="paramname"><em>ga</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック先頭追加 </p>
+<p>デックの先頭に、指定サイズのデータを追加する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>データを追加するデックデータの査証 </td></tr>
+    <tr><td class="paramname">ga</td><td>追加するデータを格納しているグローバルアドレス </td></tr>
+    <tr><td class="paramname">size</td><td>追加するデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga007024a2bc1178cf09fcce08d3664a39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_reserve_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック領域確保 </p>
+<p>デックの領域を指定した要素数確保する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>領域を確保するデックデータの参照 </td></tr>
+    <tr><td class="paramname">size</td><td>要素数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga45e13ce5d745353d5f85fd2c218f2986"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t acp_size_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デックサイズ </p>
+<p>デックに格納しているデータのサイズを返す。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deque</td><td>デックデータの参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">size_t</td><td>デックに格納しているデータのサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa021f0d2b032cd2f09b6b3d6d812c04c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void acp_swap_deque </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d65/structacp__deque__t.html">acp_deque_t</a>&#160;</td>
+          <td class="paramname"><em>deque2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デック交換 </p>
+<p>２つのデック型データの内容を交換する。</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>交換するデック型データの一方の参照 </td></tr>
+    <tr><td class="paramname">v2</td><td>交換するデック型データのもう一方の参照 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.7-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <img class="footer" src="../../by-sa.png" alt="CreativeCommons by sa"/>
+    <li class="footer">2016年06月02日(木) 15時45分02秒作成 - ACP Library / 構成: 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>
